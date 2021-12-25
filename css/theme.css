@@ -1,0 +1,62 @@
+:root
+{
+    --background-color: #05060A;
+    --text-color: #FEFEFE;
+    --switch-background-color: #343434;
+    --switch-button-color: #FEFEFE;
+}
+
+[data-theme="light"]
+{
+    --background-color: #E5E5E5;
+    --text-color: #81828E;
+    --switch-background-color: #81828E;
+    --switch-button-color: #14151C;
+}
+
+body
+{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* switcher animation */
+.theme-switcher-container
+{
+    width: 55.2px;
+    height: 23px;
+    background-color: #81828E;
+    display: flex;
+    position: relative;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.container-inactive { background-color: #343434; }
+
+.button
+{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    display: block;
+    border-radius: 30px;
+    background-color: #FEFEFE;
+    transition: all 0.3s ease;
+
+    background-position: center;
+    background-image: url(../data/night_theme_icon.png);
+    background-repeat: no-repeat;
+}
+
+.inactive
+{
+    transform: translateX(calc(40px - 8px));
+    background-color: #14151C;
+
+    
+    background-image: url(../data/day_theme_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}

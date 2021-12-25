@@ -1,0 +1,40 @@
+.no-margin { margin: 0; }
+
+.cdw
+{
+    /*
+        CDW - Content (justify-content and align-content), Display, Wrap (flex-wrap)
+    */
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.gallery-plate
+{
+    height: 850px;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 110%, 0 110%);
+}
+
+.gallery-grid
+{
+    top: 20vw;
+    left: 30vw;
+    height: 20vw;
+    transform: skew(60deg, 335deg);
+
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+}
+
+.gallery-image
+{
+    height: 8vw;
+    width: 17.8vw;
+    margin: 1vw;
+}
