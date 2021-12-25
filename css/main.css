@@ -1,4 +1,6 @@
 .no-margin { margin: 0; }
+.no-margin-bottom { margin-bottom: 0; }
+.no-margin-top { margin-top: 0; }
 
 .cdw
 {
@@ -37,4 +39,33 @@
     height: 8vw;
     width: 17.8vw;
     margin: 1vw;
+}
+
+.title
+{
+    position: relative;
+    top: 5vw;
+    left: 10vw;
+    font-family: 'Oswald', sans-serif;
+}
+
+.title-red
+{
+    color: #E50901;
+}
+
+.subtitle
+{
+    position: relative;
+    top: 10vw;
+    left: 10vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logos
+{
+    position: relative;
+    top: 40vw;
+    left: 10vw;
+    width: 30vw;
 }
