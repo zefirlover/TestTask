@@ -1,6 +1,15 @@
 .no-margin { margin: 0; }
 .no-margin-bottom { margin-bottom: 0; }
 .no-margin-top { margin-top: 0; }
+.no-margin-right {margin-right: 0;}
+
+.margin-left-only
+{
+    margin-top: 0;
+    margin-left: 2vw;
+    margin-bottom: 0;
+    margin-right: 0;
+}
 
 .cdw
 {
@@ -15,15 +24,23 @@
 
 .gallery-plate
 {
-    height: 850px;
+    height: 60vw;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 110%, 0 110%);
 }
 
+.hidden-overflow
+{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.hidden-overflow-x { overflow-x: hidden; }
+
 .gallery-grid
 {
     top: 20vw;
-    left: 30vw;
+    left: 35vw;
     height: 20vw;
     transform: skew(60deg, 335deg);
 
@@ -31,7 +48,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-
 }
 
 .gallery-image
@@ -65,7 +81,64 @@
 .logos
 {
     position: relative;
-    top: 40vw;
+    top: 20vw;
     left: 10vw;
     width: 30vw;
 }
+
+.top-position
+{
+    padding: 8vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+.top-position-image
+{
+    position: relative;
+    object-fit: contain;
+    width: 40vw;
+}
+
+.top-position-text
+{
+    padding-left: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: repeat(2, 1fr) 2fr;
+}
+
+.top-position-number
+{
+    color: #E50901;
+    opacity: 70%;
+
+    font-size: 50pt;
+}
+
+.top-position-title
+{
+    font-size: 34px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.imdb-recktangle
+{
+    width: 40px;
+    height: 20px;
+
+    color: var(--background-color);
+    background-color: var(--text-color);
+
+    border-radius:7px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.imdb-complex { justify-content: space-between; }
+.imdb-text { width: 16pt; }

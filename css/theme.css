@@ -2,16 +2,12 @@
 {
     --background-color: #05060A;
     --text-color: #FEFEFE;
-    --switch-background-color: #343434;
-    --switch-button-color: #FEFEFE;
 }
 
 [data-theme="light"]
 {
     --background-color: #E5E5E5;
     --text-color: #81828E;
-    --switch-background-color: #81828E;
-    --switch-button-color: #14151C;
 }
 
 body
