@@ -106,7 +106,7 @@
     padding-left: 5vw;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: repeat(2, 1fr) 2fr;
+    grid-template-rows: repeat(3 1fr);
 }
 
 .top-position-number
@@ -115,6 +115,7 @@
     opacity: 70%;
 
     font-size: 50pt;
+    text-align: center;
 }
 
 .top-position-title
@@ -125,6 +126,8 @@
 
 .imdb-recktangle
 {
+    display: block;
+
     width: 40px;
     height: 20px;
 
@@ -140,5 +143,32 @@
     font-family: 'Oswald', sans-serif;
 }
 
-.imdb-complex { justify-content: space-between; }
-.imdb-text { width: 16pt; }
+.imdb-recktangle-place { width: 4vw; }
+
+.imdb-complex { display: table; justify-content: center; }
+.imdb-text { width: 16pt; display: block; }
+
+.video-box
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    margin-top: 5vw;
+}
+
+.video-table
+{ 
+    display: table;
+    width: 40vw;
+}
+
+.video-table-row { display: table-row; }
+.table-cell { display: table-cell; }
+
+.video
+{
+    display: block;
+    position: relative;
+    object-fit: contain;
+    width: 12vw;
+}
