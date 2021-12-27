@@ -207,3 +207,34 @@
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
+
+.footer { justify-content: center; }
+
+.subscribe-table { display: table-row; justify-content: center; }
+.subscribe-table-element { display: block; }
+.subscribe-text
+{
+    position: relative;
+    color: var(--title-color);
+
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.subscribe-button
+{
+    position: relative;
+    width: 212px;
+    height: 50px;
+
+    color: #FEFEFE;
+    background-color: #E50901;
+
+    border-radius:7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
