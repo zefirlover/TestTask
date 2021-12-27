@@ -1,13 +1,15 @@
 :root
 {
     --background-color: #05060A;
-    --text-color: #FEFEFE;
+    --text-color: #B0B0B0;
+    --title-color: #FEFEFE;
 }
 
 [data-theme="light"]
 {
     --background-color: #E5E5E5;
     --text-color: #81828E;
+    --title-color: #3A3D48;
 }
 
 body

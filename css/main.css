@@ -63,6 +63,7 @@
     top: 5vw;
     left: 10vw;
     font-family: 'Oswald', sans-serif;
+    color: var(--title-color);
 }
 
 .title-red
@@ -101,9 +102,10 @@
     width: 40vw;
 }
 
+.padding-left { padding-left: 5vw; }
+
 .top-position-text
 {
-    padding-left: 5vw;
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: repeat(3 1fr);
@@ -122,6 +124,7 @@
 {
     font-size: 34px;
     font-family: 'Oswald', sans-serif;
+    color: var(--title-color);
 }
 
 .imdb-recktangle
@@ -145,7 +148,7 @@
 
 .imdb-recktangle-place { width: 4vw; }
 
-.imdb-complex { display: table; justify-content: center; }
+.imdb-complex { display: inline; }
 .imdb-text { width: 16pt; display: block; }
 
 .video-box
@@ -171,4 +174,36 @@
     position: relative;
     object-fit: contain;
     width: 12vw;
+}
+
+.news-plate
+{
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+    padding-right: 8vw;
+    padding-left: 8vw;
+
+    justify-content: center;
+}
+
+.news-plate-title
+{
+    position: relative;
+    font-size: 34px;
+    font-family: 'Oswald', sans-serif;
+    color: var(--title-color);
+}
+
+.news-plate-image
+{
+    position: relative;
+    object-fit: contain;
+    width: 82.5vw;
+}
+
+.news-plate-subtitle-red
+{
+    color: #9A0618;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
 }
