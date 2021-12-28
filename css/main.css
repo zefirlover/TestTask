@@ -24,6 +24,7 @@
 
 .gallery-plate
 {
+    width: 100%;
     height: 60vw;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 110%, 0 110%);
@@ -148,7 +149,7 @@
 
 .imdb-recktangle-place { width: 4vw; }
 
-.imdb-complex { display: inline; }
+.imdb-complex { display: flex; justify-content: center; }
 .imdb-text { width: 16pt; display: block; }
 
 .video-box
