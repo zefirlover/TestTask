@@ -65,6 +65,23 @@
     left: 10vw;
     font-family: 'Oswald', sans-serif;
     color: var(--title-color);
+	text-shadow: 
+		-0   -1px 0   var(--background-color),
+		 0   -1px 0   var(--background-color),
+		-0    1px 0   var(--background-color),
+		 0    1px 0   var(--background-color),
+		-1px -0   0   var(--background-color),
+		 1px -0   0   var(--background-color),
+		-1px  0   0   var(--background-color),
+		 1px  0   0   var(--background-color),
+		-1px -1px 0   var(--background-color),
+		 1px -1px 0   var(--background-color),
+		-1px  1px 0   var(--background-color),
+		 1px  1px 0   var(--background-color),
+		-1px -1px 0   var(--background-color),
+		 1px -1px 0   var(--background-color),
+		-1px  1px 0   var(--background-color),
+		 1px  1px 0   var(--background-color);
 }
 
 .title-red
@@ -78,6 +95,23 @@
     top: 10vw;
     left: 10vw;
     font-family: 'Open Sans', sans-serif;
+	text-shadow: 
+		-0   -1px 0   var(--background-color),
+		 0   -1px 0   var(--background-color),
+		-0    1px 0   var(--background-color),
+		 0    1px 0   var(--background-color),
+		-1px -0   0   var(--background-color),
+		 1px -0   0   var(--background-color),
+		-1px  0   0   var(--background-color),
+		 1px  0   0   var(--background-color),
+		-1px -1px 0   var(--background-color),
+		 1px -1px 0   var(--background-color),
+		-1px  1px 0   var(--background-color),
+		 1px  1px 0   var(--background-color),
+		-1px -1px 0   var(--background-color),
+		 1px -1px 0   var(--background-color),
+		-1px  1px 0   var(--background-color),
+		 1px  1px 0   var(--background-color);
 }
 
 .logos
@@ -92,7 +126,7 @@
 {
     padding: 8vw;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto;
     grid-template-rows: auto;
 }
 
@@ -100,6 +134,7 @@
 {
     grid-template-areas: 
         "top-position-image top-position-text"
+        ". ."
     ;
 }
 
@@ -107,17 +142,71 @@
 {
     grid-template-areas: 
         "top-position-text top-position-image"
+        ". ."
     ;
 }
 
-@media (max-width: 1200px)
+@media (max-width: 900px)
 {
-    .top-position-a .top-position-b
+    .top-position-a, .top-position-b
     {
         grid-template-areas: 
-        "top-position-image" "top-position-text"
+            "top-position-image ."
+            "top-position-text ."
         ;
     }
+
+    .image-container
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2vw;
+    }
+
+    .video-box
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .padding-left { padding-left: 0; }
+    .logos { top: 10vw; }
+    .imdb-recktangle { font-size: 5px; }
+
+    .title
+    {
+        top: 2vw;
+        margin: 0;
+    }
+
+    .subtitle
+    {
+        top: 5vw;
+        margin: 0;
+    }
+}
+
+@media (max-width: 1000px)
+{
+    .imdb-complex
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.image-container
+{
+    width: 35vw;
+    height: 20vw;
+    display: block;
+}
+
+.image-container-big
+{
+    width: 80vw;
+    height: 40vw;
+    display: block;
 }
 
 .top-position-image
@@ -126,6 +215,7 @@
     position: relative;
     object-fit: contain;
     width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -157,15 +247,13 @@
 
 .imdb-recktangle
 {
-    display: block;
-
     width: 40px;
     height: 20px;
 
     color: var(--background-color);
     background-color: var(--text-color);
 
-    border-radius:7px;
+    border-radius: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,10 +262,16 @@
     font-family: 'Oswald', sans-serif;
 }
 
-.imdb-recktangle-place { width: 4vw; }
+.imdb-complex
+{
+    display: flex;
+    justify-content: center;
+}
 
-.imdb-complex { display: flex; justify-content: center; }
-.imdb-text { width: 16pt; display: block; }
+.imdb-text
+{
+    width: 16pt; margin-top: 2px;
+}
 
 .video-box
 {
@@ -185,6 +279,7 @@
     grid-column-end: 3;
     grid-row-start: 3;
     margin-top: 5vw;
+    width: auto;
 }
 
 .video-table
@@ -274,13 +369,9 @@
     cursor: pointer;
 }
 
-.footer
-{
-    align-items: center;
-
-}
-
+.footer { align-items: center; }
 .all-margin { margin: 5vw; }
+
 .three-side-margin
 {
     margin-top: 5vw;
@@ -293,6 +384,8 @@
     width: 30vw;
     display: inline-block;
 }
+
+.footer-text-2 { display: inline-block; }
 
 .footer-title
 {
@@ -310,10 +403,4 @@
     display: block;
 }
 
-.clickable
-{
-    cursor: pointer;
-}
-
-.image-container { width: 35vw; height: 20vw; }
-.image-container-big { width: 80vw; height: 40vw; }
+.clickable { cursor: pointer; }
