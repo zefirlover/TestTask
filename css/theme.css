@@ -21,6 +21,7 @@ body
 /* switcher animation */
 .theme-switcher-container
 {
+    cursor: pointer;
     width: 55.2px;
     height: 23px;
     background-color: #81828E;
